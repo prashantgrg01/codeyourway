@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito|Raleway');
+
+:root {
+  --white: #FFFAFF;
+  --black: #1E1B18;
+  --pink-dark: #D8315B;
+  --blue: #3E92CC;
+  --blue-dark: #0A2463; 
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  line-height: 1.5;
+  color: var(--black);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Nunito', sans-serif;
+  line-height: 1.5;
+}
+
+a {
+  color: var(--pink-dark);
+  text-decoration: none;
+}
+a:hover, a:active, a:focus {
+  color: var(--blue);
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  max-width: 800px;
+}
+
+.decor-line-top::before {
+  content: "";
+  display: block;
+  background-color: var(--pink-dark);
+  height: 10px;
+  width: 100%;
+  margin: 1rem 0;
+}
+.decor-line-bottom::after {
+  content: "";
+  display: block;
+  background-color: var(--pink-dark);
+  height: 10px;
+  width: 100%;
+  margin: 1rem 0;
+}
+
+.nav-menu {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+.nav-menu a {
+  display: inline-block;
+  padding: 1rem 1rem;
+}
+
+
+.post-box {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  margin-bottom: 1.5rem;
+  transition: all 0.3s ease-out;
+}
+.post-box-title {
+  font-size: 1.15rem;
+  font-weight: 600;
+  transition: all 0.3s ease-out;
+}
+.post-box-image {
+  max-height: 250px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+.post-box-image > img {
+  transition: all 0.3s ease;
+}
+.post-box:hover, 
+.post-box:active {
+  cursor: pointer;
+  box-shadow: 0 0 15px #aaa;
+}
+.post-box:hover .post-box-title, 
+.post-box:active .post-box-title {
+  color: var(--pink-dark);
+}
+.post-box:hover .post-box-image > img, 
+.post-box:active .post-box-image > img {
+  transform: scale(1.1);
+}
+.post-box .post-box-readmore {
+
+}
+.post-box-meta {
+  margin-top: 1.2rem;
+  border-top: 1px solid #ddd;
+}
+.post-box-meta .post-box-date {
+  text-align: right;
+  font-size: 0.8rem;
+  margin: 0;
+  margin-top: 0.75rem;
+  color: #999;
+}
+
+footer {
+  font-size: 0.85rem;
+}
